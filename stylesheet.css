@@ -1,0 +1,40 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+.container {
+    margin: 30px 50px 30px 50px;
+}
+
+h1 {
+   font-family: 'Stylish', serif;
+   font-size: 50px;
+   color: white;
+}
+
+p {
+    font-family: 'Rasa', serif;
+    font-size: 17px;
+    color: white;  
+}
+
+nav {
+    font-family: 'Rasa', serif;
+    font-size: 22px;
+    color: white;
+}
+
+hr {
+    border: 1px solid lightseagreen;
+}
+
+img {
+    height: 70%;
+}
