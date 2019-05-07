@@ -17,12 +17,30 @@ h1 {
    font-family: 'Stylish', serif;
    font-size: 50px;
    color: white;
+   line-height: 100px;
 }
 
-p {
+h2 {
+    font-family: 'Stylish', serif;
+    font-size: 36px;
+    color: white;
+ }
+
+p,li,a {
     font-family: 'Rasa', serif;
     font-size: 17px;
-    color: white;  
+    color: white;
+    list-style: none;
+}
+
+a:hover{
+    color: lightseagreen; 
+}
+
+input,textarea {
+    font-family: 'Rasa', serif;
+    font-size: 17px;
+    color: grey;  
 }
 
 nav {
@@ -37,4 +55,20 @@ hr {
 
 img {
     height: 70%;
+}
+
+button {
+    font-family: 'Stylish', serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#treasure {
+    height: 50%;
+}
+
+#hook {
+    height: 40px;
+    margin-left: 40px;
 }
