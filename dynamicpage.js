@@ -7,6 +7,8 @@ function load_page (e) {
     console.log(event.target)
     let target = event.target.href;
     console.log(target);
+    window.scrollTo(0,0); //not working?
+
     fetch(target)
     .then((response) => response.text())
     .then((html) => {
@@ -22,7 +24,7 @@ function load_page (e) {
 // Loading icon
 window.addEventListener('load',loadingIcon);
 
-function loadingIcon(){
-    wrapper.innerHTML= '<i class="fas fa-circle-notch fa-spin"></i>'
+function loadingIcon(){ //not working
+    wrapper.innerHTML= '<i class="fas fa-circle-notch fa-spin"></i>';
     console.log(wrapper)
 }
