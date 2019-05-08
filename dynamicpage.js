@@ -7,7 +7,7 @@ function load_page (e) {
     console.log(event.target)
     let target = event.target.href;
     console.log(target);
-    window.scrollTo(0,0); //not working?
+    window.scrollTo(0,0);
 
     fetch(target)
     .then((response) => response.text())
