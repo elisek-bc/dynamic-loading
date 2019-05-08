@@ -26,5 +26,5 @@ window.addEventListener('load',loadingIcon);
 
 function loadingIcon(){ //not working
     wrapper.innerHTML= '<i class="fas fa-circle-notch fa-spin"></i>';
-    console.log(wrapper)
+    console.log(wrapper);
 }
