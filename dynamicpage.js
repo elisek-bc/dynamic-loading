@@ -1,16 +1,16 @@
 const nav = document.getElementsByClassName('nav-item');
+let wrapper = document.getElementById('wrapper');
 
-// second way
+// Load page on link click
 function load_page (e) {
     (e || window.event).preventDefault();
     console.log(event.target)
     let target = event.target.href;
     console.log(target);
     fetch(target)
-    // .then(response => console.log(response.text()))
     .then((response) => response.text())
     .then((html) => {
-        document.getElementById("wrapper").innerHTML = html;
+        wrapper.innerHTML = html;
     })
     .catch((error) => {
         console.warn(error);
@@ -18,3 +18,11 @@ function load_page (e) {
 } 
 
 [...nav].forEach( navitem => navitem.addEventListener('click',load_page))
+
+// Loading icon
+window.addEventListener('load',loadingIcon);
+
+function loadingIcon(){
+    wrapper.innerHTML= '<i class="fas fa-circle-notch fa-spin"></i>'
+    console.log(wrapper)
+}
