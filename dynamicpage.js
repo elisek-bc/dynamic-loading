@@ -25,6 +25,6 @@ function load_page (e) {
         }, 
     500)
 
-    document.body.appendChild(spinner);
+    document.body.appendChild(spinner); // not working
     console.log(wrapper);
 }
